@@ -1,0 +1,117 @@
+/*.horizontal-stripes {
+    border: solid 1px red;
+    background: linear-gradient( 
+    #fff,
+    #fff 20px,
+    #000 20px,
+    #000 40px);
+    height: 200px;
+    width: 200px;
+}*/
+
+#heading {
+    height: 100px;
+    margin-top: 20px;
+    border: solid 5px red;
+    padding: 20px;
+    background-color: blue;
+}
+h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    height: 100px;
+    margin-top: 20px;
+    border: solid 5px red;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+}
+html {
+    background-color:#b2b2b2;
+}
+/*.one-half.column { 
+    width: 48%; 
+}*/
+p {
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    margin-right:204px;
+    text-indent:20px;
+}
+
+.red {
+    color: red;
+}
+img {
+    /*margin-left: 204px;*/
+    width: 50%;
+    height: 20%;
+    rotate: 90deg;
+}
+section {
+    margin-top: 10px;
+   /* padding: 204px;*/
+}
+th, tr, td {
+    border: 1px solid black;
+    padding: 5px;
+    
+  }
+  thead {
+      font-weight: 400;
+  }
+
+.column {
+    float: left;
+    width: 48%;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .column2 {
+    float: right;
+    width: 48%;
+    padding: 5px;
+    text-align: left;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  li {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    list-style: square;
+}
+#facebook, #reddit, #linkedin {
+      width: 40px;
+      height: 40px;
+  }
+div {
+    margin:5px;
+    background-color: #FFFFFF;
+}
+h3 {
+font-family: 'Lato', sans-serif;
+font-size: 28px;
+font-weight: 100;
+}
+
+.lower {
+    float:left;
+    width: 48%;
+    padding: 5px;
+    text-align: center;
+}
+.morepics {
+    position: relative;
+    width: 25%;
+    text-align:center;
+}
