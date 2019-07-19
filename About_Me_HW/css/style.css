@@ -9,27 +9,90 @@
     width: 200px;
 }*/
 
-#heading {
-    height: 100px;
-    margin-top: 20px;
-    border: solid 5px red;
-    padding: 20px;
-    background-color: blue;
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #61D7FF;
+  color:#363636;
+  font-size: 48px;
 }
+
 h1 {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 48px;
-    height: 100px;
-    margin-top: 20px;
-    border: solid 5px red;
-    padding: 20px;
 }
+
 h2 {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 32px;
 }
+
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 204px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #3D3D3D; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  /*OVERWRITTEN SIDE BAR NAV CSS */
+  /* The navigation menu links SIDE NAV BAR */
+ .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color:#3FFF35;
+    display: block;
+    font-family: 'Lato', sans-serif
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #1EFFBD;
+    font-family: 'Lato', sans-serif
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+  /* Add  background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #61D7FF;
+    color: white;
+  }
+
 html {
     background-color:#b2b2b2;
 }
@@ -41,6 +104,7 @@ p {
     font-size:20px;
     margin-right:204px;
     text-indent:20px;
+    padding: 20px;
 }
 
 .red {
@@ -59,24 +123,38 @@ section {
 th, tr, td {
     border: 1px solid black;
     padding: 5px;
+    font-family: 'Lato', sans-serif;
+    margin-right: 60px;
     
   }
   thead {
       font-weight: 400;
+      margin-right: 60px;
+  }
+
+  th {
+      font-weight: 700;
+      font-family: 'Lato';
+      padding: 20px;
+      margin-right: 60px;
   }
 
 .column {
     float: left;
-    width: 48%;
+    max-width: 48%;
+    flex: 50%;
     padding: 5px;
     text-align: center;
+    align-self: center;
   }
 
   .column2 {
     float: right;
-    width: 48%;
+    max-width: 48%;
+    align-self: center;
     padding: 5px;
     text-align: left;
+    flex: 50%;
 }
   
   /* Clear floats after the columns */
@@ -89,6 +167,7 @@ th, tr, td {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     list-style: square;
+    text-indent: 40px;
 }
 #facebook, #reddit, #linkedin {
       width: 40px;
@@ -96,12 +175,22 @@ th, tr, td {
   }
 div {
     margin:5px;
-    background-color: #FFFFFF;
+    background-color: #f0ead6;
+   /*ASK ABOUT OPACITY CONFLICT AND WHY ITS AFFECTING ALL CONTENT, NOT JUST EGGSHELL BOXES */
+     /*opacity: 0.3;
+    filter: alpha(opacity=30); */ /* For IE8 and earlier */
 }
 h3 {
 font-family: 'Lato', sans-serif;
 font-size: 28px;
 font-weight: 100;
+padding: 15px;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 700;
 }
 
 .lower {
@@ -113,5 +202,31 @@ font-weight: 100;
 .morepics {
     position: relative;
     width: 25%;
-    text-align:center;
+    flex-wrap: wrap;
 }
+
+body {
+    margin: 0;
+    font-family: 'Lato', Helvetica, sans-serif;
+  }
+  
+/*I was trying to make a hero image but could not find a way to reference the local file in CSS*/
+/*
+.hero-image {
+    background-image: url("C:/Users/gamin/OneDrive/Documents/GitHub/HW-MyFirstLayout/About_Me_HW/images/mountain.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: bottom;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: bottom;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }*/
