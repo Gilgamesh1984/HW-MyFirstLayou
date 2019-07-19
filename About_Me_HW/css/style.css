@@ -27,6 +27,7 @@ h2 {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 32px;
+    margin-bottom: 40px;
 }
 
 
@@ -175,7 +176,7 @@ th, tr, td {
   }
 div {
     margin:5px;
-    background-color: #f0ead6;
+   /* background-color: #f0ead6;*/
    /*ASK ABOUT OPACITY CONFLICT AND WHY ITS AFFECTING ALL CONTENT, NOT JUST EGGSHELL BOXES */
      /*opacity: 0.3;
     filter: alpha(opacity=30); */ /* For IE8 and earlier */
@@ -211,22 +212,56 @@ body {
   }
   
 /*I was trying to make a hero image but could not find a way to reference the local file in CSS*/
-/*
+
 .hero-image {
-    background-image: url("C:/Users/gamin/OneDrive/Documents/GitHub/HW-MyFirstLayout/About_Me_HW/images/mountain.jpg");
+    background-image: url("../images/mountain.jpg");
     background-color: #cccccc;
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: bottom;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
   }
-  
+
   .hero-text {
     text-align: center;
-    position: bottom;
-    top: 50%;
+    margin: 60px;
+    /*top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
-  }*/
+    color: white;*/
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  h4  {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 40px;
+  }
+
+  h5 {    
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 40px;}
+
+  button {
+    font-size: 18px;
+    padding: 10px 24px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 40px;
+    /*display: inline-block;*/
+  }
